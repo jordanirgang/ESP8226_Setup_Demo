@@ -4,8 +4,7 @@
 extern "C" {
 #endif
 
-#include "motor_functions.h"
-//#include "cmd_wifi.h"
+#include "Nidec24H055M020.h"
 
 #ifdef __cplusplus
 }
