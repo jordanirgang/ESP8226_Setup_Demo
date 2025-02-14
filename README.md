@@ -1,4 +1,4 @@
-# Hello World Example
+# EXPRESSIF Framework setup demo
 
 c code for 12V Nidec 24H055M020 motor
 
