@@ -3,6 +3,6 @@
 cmake_minimum_required(VERSION 3.5)
 
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
-REQUIRES driver
 set(EXTRA_COMPONENT_DIRS $ENV{IDF_PATH}/examples/system/console/components)
+REQUIRE driver
 project(brushless_control)

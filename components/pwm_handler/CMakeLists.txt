@@ -1,3 +1,3 @@
-idf_component_register(SRCS "Nidec24H055M020.c"
+idf_component_register(SRCS "pwm_handler.c"
                     INCLUDE_DIRS .
 		    REQUIRES driver)

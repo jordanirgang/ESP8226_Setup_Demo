@@ -5,17 +5,19 @@ extern "C" {
 #endif
 
 #include <stdio.h>
-
+#include "driver/gpio.h"
+#include "pwm_handler.h"
+	
 
 struct motor_params{
-	uint8_t ctrl_PWM_pin;
-	uint8_t ctrl_start_stop_pin;
-	uint8_t ctrl_brake_pin;
-	uint8_t ctrl_direction_pin;
+	uint32_t ctrl_PWM_pin;
+	uint32_t ctrl_start_stop_pin;
+	uint32_t ctrl_brake_pin;
+	uint32_t ctrl_direction_pin;
 
-	};
+};
 
-struct motor_params init_Nidec(uint8_t*,uint8_t*,uint8_t*,uint8_t*);
+struct motor_params init_Nidec(uint32_t,uint32_t,uint32_t,uint32_t);
 
 void set_outputs(struct motor_params*);
 
